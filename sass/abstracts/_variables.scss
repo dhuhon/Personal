@@ -1,0 +1,28 @@
+$header-height:3.5rem;
+
+
+/*Color*/
+$first-color:hsl(207,65%,65%);
+$title-color:hsl(207,4%,16%);
+$text-color:hsl(207,4%,28%);
+$text-color-light:hsl(207,4%,56%);
+$body-color:hsl(207,4%,99%);
+$container-color:hsl(207,4%,95%);
+
+$gradient-color:linear-gradient(180deg,hsla(207,48%,72%,0),hsla(207,65%,65%,1));
+
+
+/**Typography/
+
+/*.5rem = 8px | 1 rem =16px*/
+
+$body-font: 'Roboto', sans-serif;
+$title-font:'Lora', serif;
+$biggest-font-size:1.5rem;
+$h1-font-size:1.5rem;
+$h2-font-size:1.25rem;
+$h3-font-size:1rem;
+$normal-font-size:.938rem;
+$small-font-size: .813rem;
+$smaller-font-size: .75rem;
+$tiny-font-size: .625rem;
