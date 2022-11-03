@@ -1,1 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+
+h1,h2,h3{
+    color: $title-color;
+    font-family: $title-font;
+    font-weight: $font-medium;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
