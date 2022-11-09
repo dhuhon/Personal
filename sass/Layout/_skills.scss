@@ -1,0 +1,76 @@
+.skills{
+    &__container{
+      row-gap: 3.5rem;
+
+    }
+
+    &__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: .5rem;
+        font-size: $small-font-size;
+        font-weight: $font-semi-bold;
+        margin-bottom: 2.5rem;
+
+        &__ i {
+            font-size: 1rem;
+            font-weight: initial;
+        }
+    }
+
+   
+
+    &__info,&__data,&__blob{
+        display: grid;
+
+    }
+
+    &__info{
+        grid-template-columns: repeat(3, 1fr);
+        gap:2.5rem;
+    }
+
+    &__data{
+        justify-content: center;
+        text-align: center;
+
+
+     
+
+    }
+
+    &__blob{
+        width: 80px;
+        height: 100px;
+        background-color: $container-color;
+        border-radius: 3rem;
+        margin-bottom: 1rem;
+        place-items: center;
+
+       
+        & img{
+            width: 40px;
+        }
+
+        &:hover img{
+            animation: bounce-skills .6s;
+        }
+
+
+
+    }
+
+    &__name{
+        font-size: $small-font-size;
+        margin-bottom: .25rem;
+    }
+    &__subtitle{
+        font-size: $tiny-font-size;
+        color: $text-color-light;
+    }
+
+
+
+
+}

@@ -19,5 +19,8 @@
   "homepage": "https://github.com/dhuhon/Personal#readme",
   "dependencies": {
     "node-sass": "^7.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^10.1.0"
   }
 }
