@@ -66,8 +66,12 @@ a {
   0% {
     transform: translate(0); }
   20% {
-    transform: translate(-6px); }
+    transform: translateY(-6px); }
   40% {
+    transform: translate(0); }
+  60% {
+    transform: translateY(-3px); }
+  80% {
     transform: translate(0); } }
 
 .header {
@@ -260,3 +264,38 @@ a {
 .skills__subtitle {
   font-size: 0.625rem;
   color: #8a8f93; }
+
+.qualification {
+  position: relative; }
+  .qualification__container {
+    row-gap: 3.5rem; }
+  .qualification__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rems;
+    font-size: 0.813rem;
+    font-weight: 600;
+    margin-bottom: 2rem; }
+    .qualification__title i {
+      font-size: 1rem;
+      font-weight: initial; }
+  .qualification__info {
+    display: grid;
+    row-gap: 2rem; }
+  .qualification__name {
+    font-size: 0.938rem;
+    margin-bottom: 1.25rem; }
+  .qualification__country, .qualification__year {
+    display: block;
+    font-size: 0.813rem;
+    color: #8a8f93; }
+  .qualification__country {
+    margin-bottom: .75rem; }
+  .qualification__img {
+    width: 150px;
+    position: absolute;
+    right: -3rem;
+    bottom: 12rem;
+    transform: rotate(15deg);
+    opacity: .1; }
