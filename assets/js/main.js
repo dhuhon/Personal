@@ -31,3 +31,28 @@ const linkAction = () =>{
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+/* ========================SWIPER====================== */
+
+var swiperProject = new Swiper(".projects__container", {
+    loop:true,
+    spaceBetween:25,
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: -56,
+        },
+
+      },
+  });

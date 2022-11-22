@@ -10,6 +10,7 @@
   <link rel="shortcut icon" href="assets/img/" type="image/x-icon">
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -314,6 +315,149 @@
           <div class="services__card">
             <i class="ri-layout-4-line"></i>
             <h2 class="services__title">UI/UX <br> Designer</h2>
+            <p class="services__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum provident nisi rem ea?
+            </p>
+            <div class="services__border"></div>
+          </div>
+          <div class="services__card">
+            <i class="ri-layout-4-line"></i>
+            <h2 class="services__title">UI/UX <br> Designer</h2>
+            <p class="services__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum provident nisi rem ea?
+            </p>
+            <div class="services__border"></div>
+          </div>
+          <div class="services__card">
+            <i class="ri-layout-4-line"></i>
+            <h2 class="services__title">UI/UX <br> Designer</h2>
+            <p class="services__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum provident nisi rem ea?
+            </p>
+            <div class="services__border"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most Recent Work</span>
+        <div class="container section__border">
+          <div class="projects__container swiper">
+            <div class="swiper-wrapper">
+                <div class="projects__content swiper-slide">
+                  <img src="./assets/img/project1.jpg" alt="projects image" class="projects__img">
+                  <div>
+                    <span class="projects__subtitle">Web</span>
+                    <h1 class="projects__title">Mordern Website</h1>
+
+                    <a href="" class="projects__button">
+                      View Demo <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__content swiper-slide">
+                  <img src="./assets/img/project4.jpg" alt="projects image" class="projects__img">
+                  <div>
+                    <span class="projects__subtitle">Web</span>
+                    <h1 class="projects__title">E-commerce</h1>
+
+                    <a href="" class="projects__button">
+                      View Demo <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__content swiper-slide">
+                  <img src="./assets/img/project3.jpg" alt="projects image" class="projects__img">
+                  <div>
+                    <span class="projects__subtitle">Web</span>
+                    <h1 class="projects__title">Tradional Website</h1>
+
+                    <a href="" class="projects__button">
+                      View Demo <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__content swiper-slide">
+                  <img src="./assets/img/project2.jpg" alt="projects image" class="projects__img">
+                  <div>
+                    <span class="projects__subtitle">Web</span>
+                    <h1 class="projects__title">Dashboard</h1>
+
+                    <a href="" class="projects__button">
+                      View Demo <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <div class="swiper-pagination">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get In Touch</span>
+
+        <div class="contact__container container grid section">
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-chat-3-line"></i> Talk To Me
+            </h3>
+
+            <div class="contact__info">
+              <div class="contact__data">
+                <span class="contact__data-title">Email</span>
+                <span class="contact__data-info">Dhuhon@gmail.com</span>
+              </div>
+
+              <div class="contact__data">
+                <span class="contact__data-title">Whatsapp</span>
+                <span class="contact__data-info">18762878095</span>
+                <a href="https://api.whatsapp.com/send?phone=18762878095&text=Hello" class="contact--button">
+                  Write me <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+              <div class="contact__data">
+                <span class="contact__data-title">Messenger</span>
+                <span class="contact__data-info">@DiRealySolly</span>
+                <a href="#" class="contact--button">
+                  Write me  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact__content">
+            <h3 class="contact__title">
+                <i class="ri-send-plane-line"></i> Write me your project
+            </h3>
+
+
+            <form class="contact__form" id="contact-form" action="">
+              <div class="contact__form-div">
+                <label class="contact__form-tag" for="contact-name">Names</label>
+                <input type="text" id="contact-name" required placeholder="Name" name="user_name" class="contact__form-input">
+              </div>
+              <div class="contact__form-div">
+                <label class="contact__form-tag" for="co">Mail</label>
+                <input type="email" id="contact-email" required placeholder="Email" name="user_email" class="contact__form-input">
+              </div>
+              <div class="contact__form-div contact-form-area">
+                <label class="contact__form-tag" for="contact-message">Message</label>
+                <textarea name="Message" id="contact-message"  placeholder="Message"  class="contact__form-input"  cols="30" rows="10"></textarea>
+              </div>
+
+              <button type="submit" class="contact__button">Submit <i class="ri-arrow-up-line"></i></button>
+            </form>
           </div>
         </div>
       </section>
@@ -332,7 +476,7 @@
   </footer>
   <!----------Footer----------------->
 
-
+<script src="./assets/js/swiper-bundle.min.js"></script>
   <script  src="assets/js/main.js" type="text/javascript" ></script>
 
 </body>

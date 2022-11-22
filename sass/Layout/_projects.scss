@@ -1,0 +1,44 @@
+.projects{
+    &__container{
+        overflow: initial;
+    }
+
+    &__content{
+        display: grid;
+        justify-content: center;
+    }
+
+    &__img{
+        width: 250px;
+        border-radius: .75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    &__subtitle{
+        font-size: $small-font-size;
+        color: $text-color-light;
+
+    }
+
+    &__title{
+        font-size: $h2-font-size;
+        margin-bottom: 1.25rem;
+        margin: .5rem 0 1.25rem;
+    }
+    &__button{
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+        color: $title-color;
+        font-size: $small-font-size;
+
+        &:hover i {
+            transform: translateX(.25rem);
+        }
+
+        & i {
+            font-size: 1rem;
+            transition: transform .3s;
+        }
+    }
+}
