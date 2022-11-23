@@ -453,8 +453,10 @@
               </div>
               <div class="contact__form-div contact-form-area">
                 <label class="contact__form-tag" for="contact-message">Message</label>
-                <textarea name="Message" id="contact-message"  placeholder="Message"  class="contact__form-input"  cols="30" rows="10"></textarea>
+                <textarea  id="contact-message" name="user_content"  placeholder="Message"  class="contact__form-input contact__form-area"  cols="30" rows="10"></textarea>
               </div>
+
+              <p class="contact__confirm color-blue" style="margin-top:2rem;" id="contact-confirm"></p>
 
               <button type="submit" class="contact__button">Submit <i class="ri-arrow-up-line"></i></button>
             </form>
@@ -477,6 +479,7 @@
   <!----------Footer----------------->
 
 <script src="./assets/js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script  src="assets/js/main.js" type="text/javascript" ></script>
 
 </body>
