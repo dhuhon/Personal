@@ -1,0 +1,54 @@
+.footer{
+    &__container{
+        padding:3rem 0 7rem;
+        text-align: center;
+
+
+    }
+
+    &__title{
+        font-size: $h1-font-size;
+        font-weight: $font-semi-bold;
+        margin-bottom: 1rem;
+    }
+
+    &__list,&__social{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__list{
+        margin: 2.5rem 0;
+        column-gap: 2.5rem;
+
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+
+    &__social{
+        column-gap: 1.2rem;
+
+    &-link{
+        font-size: 1.25rem;
+        color: $title-color;
+        transition: transform .3s;
+
+        &:hover{
+            transform: translateY(-.15rem);
+        }
+    }
+    
+    }
+
+    &__copy{
+        display: block;
+        margin-top: 4.5rem;
+        font-size: $small-font-size;
+        color: $text-color-light;
+    }
+
+
+}
