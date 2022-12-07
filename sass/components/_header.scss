@@ -4,6 +4,13 @@
     bottom: 2rem;
     left: 0;
     z-index: $z-fixed;
+
+    @include respond(desktop) {
+       top:0;
+       bottom:initial;
+       background-color: $body-color;
+       transition: .4s;;
+      }
 }
 
 
@@ -16,6 +23,29 @@ background-color: $body-color;
 box-shadow: 0 4px 20px hsla(207, 24%, 45%, .1);
 padding-inline: 1.5rem;
 border-radius: 3rem;
+
+&, &__menu{
+    @include respond(tab-port) {
+        width: 380px;
+      }
+
+}
+
+@include respond(desktop) {
+    width: initial;
+    height: calc(3.5rem + .5rem);
+    box-shadow: none;
+    border-radius: 0;
+    column-gap: 3rem;
+    margin-inline:1.5rem;
+    padding: 0;
+  }
+@include respond(tab-port) 
+{
+ margin: 0 auto;
+}
+
+
 
 
 
@@ -37,6 +67,15 @@ border-radius: 3rem;
     grid-template-columns: repeat(3, max-content);
     justify-content: center;
     gap: 2rem 3rem;
+
+    @include respond(phone) {
+        gap:1rem 1.25rem;
+      }
+
+      @include respond(desktop) {
+        display: flex;
+        column-gap: 3rem;
+      }
 }
 
 &__link{
@@ -48,12 +87,19 @@ border-radius: 3rem;
     color: $text-color;
     transition: color .3s;
 
+    @include respond(desktop) {
+       font-size: $normal-font-size;
+      }
+
     &:hover{
         color:$title-color
     }
     & i {
         font-size: 1.25rem;
     }
+
+
+
 
     
 }
@@ -66,6 +112,38 @@ border-radius: 3rem;
     cursor: pointer;
 }
 
+&__buttons{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+&__menu{
+    @include respond(desktop) {
+        width: initial;
+        margin-left: auto;
+        background-color: $body-color;
+        transition: background .4s;
+      }
+
+    @include respond(phone) {
+        padding-bottom: 4rem;
+      }
+     
+   
+
+}
+
+&__link i,&__close,&__toggle{
+    @include respond(desktop) {
+       display: none;
+      }
+}
+
+
+
+
+
 }
 
 
@@ -74,6 +152,7 @@ border-radius: 3rem;
     bottom: 2rem !important;
    
 }
+
 
 @media screen and(max-width:1023px) {
     .nav__menu{

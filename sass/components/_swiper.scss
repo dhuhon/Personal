@@ -13,11 +13,19 @@ color: $title-color;
 .projects__container .swiper-button-prev{
     left:  -1rem;
     top:4.5rem;
+
+    @include respond(tab-port) {
+    left: 1rem;
+      }
 }
 
 .projects__container .swiper-button-next{
     right:  -1rem;
     top:4.5rem;
+
+    @include respond(tab-port) {
+        right: 1rem;
+      }
 }
 
 .projects__container .swiper-slide{

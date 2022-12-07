@@ -2,6 +2,12 @@
     &__container{
         row-gap: 2.5rem;
         justify-content: center;
+        @include respond(tab-land) {
+            grid-template-columns: repeat(2,max-content);
+            column-gap: 5rem;
+           
+   
+          }
 
     }
 

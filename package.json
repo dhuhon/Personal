@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "My personal resume",
   "main": "main.js",
+  "type": "module",
   "scripts": {
+    "start": "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile-sass": "node-sass sass/main.scss assets/css/style.css"
   },
@@ -18,7 +20,9 @@
   },
   "homepage": "https://github.com/dhuhon/Personal#readme",
   "dependencies": {
-    "node-sass": "^7.0.3"
+    "node-sass": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "mocha": "^10.1.0"

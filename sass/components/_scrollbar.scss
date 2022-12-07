@@ -27,6 +27,10 @@
     z-index: $z-tooltip;
     transition: bottom .3s, transform .3s;
 
+    @include respond(desktop) {
+        right: 3rem;
+     }
+
     &:hover{
         transform: translateY(-.25rem);
     }
@@ -34,4 +38,7 @@
 
 .show-scroll{
     bottom: 9.5rem;
+    @include respond(desktop) {
+        bottom: 5rem;
+     }
 }

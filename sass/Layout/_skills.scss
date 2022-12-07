@@ -2,6 +2,14 @@
     &__container{
       row-gap: 3.5rem;
 
+      @include respond(tab-port) {
+        justify-content: center ;
+      }
+      @include respond(tab-land) {
+        grid-template-columns: repeat(2,  max-content);
+        column-gap: 5rem;
+      }
+
     }
 
     &__title{
@@ -29,6 +37,11 @@
     &__info{
         grid-template-columns: repeat(3, 1fr);
         gap:2.5rem;
+
+
+        @include respond(phone) {
+            grid-template-columns: repeat(2,1fr);
+          }
     }
 
     &__data{

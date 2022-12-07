@@ -1,0 +1,36 @@
+.change-theme{
+font-size: 1.35rem;
+color: $title-color;
+cursor: pointer;
+transition: color .3s;
+
+@include respond(desktop) {
+    color: $title-color ;
+ }
+}
+
+body.dark-theme{
+    /*Color*/
+
+$title-color:hsl(207,4%,95%);
+$text-color:rgb(236, 238, 240);
+$body-color:hsl(207,4%,10%);
+$container-color:hsl(207,4%,12%);
+
+background-color:$body-color ;
+color: $text-color;
+
+}
+
+.dark-theme .nav,.dark-theme .nav__menu,.dark-theme .scrollup{
+max-width: 1024px;
+margin-inline: 1.5rem;
+box-shadow: 0 4px 20px hsla(207,24%, 8%, .4);
+}
+
+.dark-theme .nav, .dark-theme .nav__menu{
+    @include respond(desktop) {
+       background-color: $body-color;
+    }
+}
+

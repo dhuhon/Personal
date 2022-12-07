@@ -1,6 +1,19 @@
 .contact{
     &__container{
         row-gap: 3.5rem;
+        @include respond(tab-land) {
+            grid-template-columns: repeat(2,max-content);
+            
+          }
+
+          @include respond(tab-land) {
+            justify-content: center;
+            column-gap: 8rem;
+           
+          }
+
+
+
     }
 
     &__title{
@@ -60,6 +73,11 @@
     &__form{
         position: relative;
         row-gap: 2rem;
+
+        @include respond(tab-land) {
+            width: 360px;
+          
+          }
 
         &-div{
             position: relative;

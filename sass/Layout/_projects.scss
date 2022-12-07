@@ -1,6 +1,16 @@
 .projects{
     &__container{
         overflow: initial;
+
+        @include respond(tab-port) {
+            width: 400px;
+            overflow: hidden;
+          }
+
+          @include respond(tab-land) {
+            width: 500px;
+          
+          }
     }
 
     &__content{
@@ -12,6 +22,12 @@
         width: 250px;
         border-radius: .75rem;
         margin-bottom: 1.25rem;
+
+        @include respond(phone) {
+            width: 200px;
+            justify-self: center;
+
+          }
     }
 
     &__subtitle{

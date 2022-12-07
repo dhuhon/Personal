@@ -1,6 +1,17 @@
 .container{
     max-width: 1024px;
     margin-inline: 1.5rem;
+
+
+    @include respond(desktop-lg) {
+        margin-inline: auto;
+      }
+
+    @include respond(phone) {
+        margin-inline: 1rem;
+      }
+
+
 }
 
 .grid{
@@ -11,9 +22,17 @@
 .section{
     padding-block: 2.5rem;
 
+    @include respond(desktop) {
+        padding-block: 8rem 0;
+     }
+
     &__border{
         border-bottom: 1px solid $title-color;
         padding-bottom: 3.5rem;
+        @include respond(big-desk) {
+            padding-bottom: 6rem;
+          }
+    
     }
 
     &__title,&__subtitle{
@@ -48,4 +67,11 @@ color: hsl(4, 71%, 50%);
 
 .active-link{
     color:  hsl(4, 71%, 50%) !important;
+}
+
+.bg-header{
+   box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1); 
+}
+.dark-theme .bg-header{
+    box-shadow: 0 6px 24px hsla(207, 24%, 8%, .6);
 }

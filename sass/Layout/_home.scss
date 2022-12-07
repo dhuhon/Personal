@@ -2,16 +2,37 @@
     &__container{
         row-gap: 4rem;
         padding-top: 2rem;
+
+
+        @include respond(tab-land) {
+            grid-template-columns: 1fr 2fr 1fr;
+          }
     }
 
     &__data{
         row-gap: 1.5rem;
+
+
+        @include respond(big-desk) {
+            row-gap: 2.5rem;
+          }
+        @include respond(tab-land) {
+            order: 2;
+          }
     }
     &__title{
         text-align: center;
         font-size:$biggest-font-size;
         letter-spacing: .3px;
         margin-bottom: .5rem;
+
+        @include respond(big-desk) {
+            font-size: $biggest-font-size;
+          }
+
+        @include respond(desktop) {
+            font-size: 2.25rem;
+         }
     }
     &__blob{
         position: relative;
@@ -22,6 +43,12 @@
         justify-self: center;
         border-radius: 6.2rem;
         place-items: center;
+
+        @include respond(big-desk) {
+            width: 400px;
+            height: 580px;
+            border-radius: 12.5rem;
+          }
     
     }
     &__perfil{
@@ -34,8 +61,18 @@
         justify-content: center;
         align-items: flex-end;
 
+        @include respond(big-desk) {
+            width: 340px;
+            height: 520px;
+            border-radius: 10.6rem;
+          }
+
         & img{
             width: 150px;
+
+            @include respond(big-desk) {
+                width: 300px;
+              }
         }
     }
 
@@ -48,6 +85,11 @@
         width:50px;
         left: -1.5rem;
         top:5rem;
+        @include respond(big-desk) {
+            width: 100px;
+            left: -4rem;
+            top:10rem;
+          }
     }
     &__shape-circles{
         width:150px;
@@ -55,17 +97,31 @@
         right:-3rem;
         transform: rotate(15deg);
         z-index: -1;
+
+        @include respond(big-desk) {
+            width: 250x;
+            bottom: -1rem;
+            right: -5rem;
+          }
     }
     &__social{
         justify-self: center;
         display: flex;
         column-gap: 1.25rem;
 
+        @include respond(big-desk) {
+            column-gap: 2rem;
+          }
+
 
         &--link{
             font-size: 1.25rem;
             color:$text-color;
             transition: color .3s ease;
+
+            @include respond(big-desk) {
+                font-size: 1.5rem;
+              }
                     &:hover{
                         color:#c1c1c1;
                     }
@@ -75,6 +131,23 @@
     &__info{
         display: grid;
         row-gap: 2rem;
+        @include respond(big-desk) {
+            grid-template-rows: repeat(3,130px);
+            row-gap: 4rem;
+            margin-top: 16rem;
+          }
+
+        &{
+            margin-top: 10rem;
+        }
+
+        &:nth-child(3)
+        {
+            @include respond(tab-land) {
+                order: 3;
+                text-align: right;
+              }
+        }
 
         &--title{
            font-family: $body-font; 
@@ -91,6 +164,10 @@
 
         &--description{
             padding-right: 4rem;
+
+            @include respond(tab-land) {
+                padding-right: 0;
+              }
         }
         &--number{
             font-size: $h1-font-size;

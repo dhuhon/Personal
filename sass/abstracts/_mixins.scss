@@ -1,0 +1,43 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+      @media (max-width: 340px) {
+        
+        @content;
+      }
+    }
+  
+    @if $breakpoint==tab-port {
+      @media (min-width: 576px) {
+        //900px/16px
+        @content;
+      }
+    }
+  
+    @if $breakpoint==tab-land {
+      @media (min-width: 767px) {
+        //1200px/16px
+        @content;
+      }
+    }
+  
+    @if $breakpoint==desktop {
+      @media (min-width: 1023px) {
+        //1800px/16px
+        @content;
+      }
+    }
+
+    @if $breakpoint==desktop-lg {
+      @media (min-width: 1048px) {
+        //1800px/16px
+        @content;
+      }
+    }
+
+    @if $breakpoint==big-desk {
+      @media (min-width: 1200px) {
+        //1800px/16px
+        @content;
+      }
+    }
+  }
